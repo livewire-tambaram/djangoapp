@@ -1,0 +1,27 @@
+{%extends 'home.html'%}
+{%block title%}
+    <title>Enquiries</title>
+{%endblock%}
+{%block a%}
+    <h2>ENQUIRIES</h2>
+    <table border="" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Course</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {%for a in enq%}
+        <tr>
+            <td>{{a.name}}</td>
+            <td>{{a.email}}</td>
+            <td>{{a.phone}}</td>
+            <td>{{a.course}}</td>
+            <td><a href="/update/{{a.id}}">Edit</a></td>
+            <td><a href="/delete/{{a.id}}">Delete</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+{%endblock%}

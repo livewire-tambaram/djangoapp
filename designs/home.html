@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block title%}
+    <title>Livewire</title>
+    {%endblock%}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="col-lg-12 col-md-12 col-sm-12 bg-primary">
+            <h1>LIVEWIRE</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="bg-danger col-lg-3 col-md-3 col-sm-3">
+            <a href="/" class="btn btn-success btn-block">Home</a>
+            <a href="/about" class="btn btn-success btn-block">About</a>
+            <a href="/course" class="btn btn-success btn-block">Courses</a>
+            <a href="" class="btn btn-success btn-block">Sessions</a>
+            <a href="" class="btn btn-success btn-block">Events</a>
+            <a href="" class="btn btn-success btn-block">Workshops</a>
+            <a href="/enquiry" class="btn btn-success btn-block">Enquire Now</a>
+            <a href="/login" class="btn btn-success btn-block">Login</a>
+        </div>
+
+        <div class="bg-info col-lg-9 col-md-9 col-sm-9 lead">
+            {%block a%}
+            <h2 class="text-danger">About Livewire</h2>
+            <p>
+                Education is any kind of knowledge transitioned into learning.
+
+                LIVEWIRE promote niche training in IT, Electronics & Electricals creating experts for emerging technology industries and specialist technology jobs. A part of CADD Centre, which is Asia's largest CAD/CAM/CAE training institute. LIVEWIRE is present in 100 locations across India and 6 Countries.
+            </p>
+
+            <div class="col-lg-6 col-md-6">
+                <h3 class="text-danger" title="SAMPLE">Learn from the experts</h3>
+                <p>Being the Market leaders with a vast experience of 3 decade, LIVEWIRE courses are designed as per the industry needs.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <h3 class="text-danger">Guaranteed career growth</h3>
+                <p>The Product Portfolio is filled with technologies that are current and trending. We choose courses that has a high level of scope in the Job market.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <h3 class="text-danger">100K+ Trained Students</h3>
+                <p>Happy customers builds our strong Alumni network, where they share their industry experience for the next generation.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <h3 class="text-danger">ISO 29990:2010</h3>
+                <p>Certified for the Quality Training and Competence of learning service providers to all relevant stakeholders</p>
+            </div>
+            {%endblock%}
+        </div>
+
+    </div>
+</body>
+</html>

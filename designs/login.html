@@ -1,0 +1,12 @@
+{%extends 'home.html'%}
+
+{%block title%}
+    <title>LOGIN</title>
+{%endblock%}
+{%block a%}
+    <form method="post">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="submit">
+    </form>
+{%endblock%}
